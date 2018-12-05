@@ -9,5 +9,7 @@ public class EmptyCheck {
 		List<String> list = Arrays.asList("Manohar", "", "Sambali", "Hello", "World", "", null);
 		List<String> filtered = list.stream().filter(s -> s != null && (!s.isEmpty() || !s.equals("Manohar"))).collect(Collectors.toList());
 		System.out.println(filtered);
+		long count = list.stream().filter(s -> s != null && !s.isEmpty() && !s.equals("Manohar")).count();
+		System.out.println(count);
 	}
 }
