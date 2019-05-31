@@ -37,7 +37,7 @@ public class EmptyAndNullDuplicateCheck {
 		set.add(null);
 		set.add(null);
 		set.add("dkfjdkf");
-		System.out.println("---------------");
+		System.out.println("-------hghgh--------");
 		for (String string : set) {
 			System.out.println(string);
 		}
@@ -48,12 +48,12 @@ public class EmptyAndNullDuplicateCheck {
 		map.put(null, "null_1");
 		map.put(null, "null_2");
 		map.put("1", "14");
-		System.out.println("---------------");
+		System.out.println("------ssssss---------");
 		Set<String> keySet = map.keySet();
 		for (String string : keySet) {
 			System.out.println(string+" -> "+map.get(string));
 		}
-		
+		System.out.println("99999999999999999990000000000000000000");
 		Set<Entry<String,String>> entrySet = map.entrySet();
 		for (Entry<String, String> entry : entrySet) {
 			System.out.println(entry.getKey()+" -> "+entry.getValue());
